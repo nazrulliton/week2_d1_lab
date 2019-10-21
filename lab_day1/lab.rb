@@ -22,8 +22,13 @@ def set_cohort (cohort)
 end
 
 
+def student_can_talk
+  return "I can talk"
+end
 
-
+def student_fav_lang (language)
+  return "I can talk #{language}"
+end
 
 
 

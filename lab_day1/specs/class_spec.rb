@@ -27,9 +27,17 @@ student.set_cohort("D32")
 assert_equal("D32",student.get_cohort)
 end
 
+def test_student_can_talk
+  student = Student.new("Jeff", "E30")
+assert_equal("I can talk",student.student_can_talk )
+end
 
-
-
+def test_student_fav_lang
+  student = Student.new("Jeff", "E30")
+  # student.student_fav_lang("Ruby")
+  student.student_fav_lang("Ruby")
+assert_equal("I can talk Ruby", student.student_fav_lang("Ruby"))
+end
 
 
 
